@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R81 Towing - Professional Towing Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+        .hero-text {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        .text-glow {
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60000, 0 0 20px #e60000; }
+            to { text-shadow: 0 0 10px #fff, 0 0 15px #ff4d4d, 0 0 20px #ff4d4d, 0 0 25px #ff4d4d; }
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+    <div class="flex-shrink-0">
+        <a href="#" class="flex items-center space-x-3">
+            <!-- Logo -->
+            <img src="images/logo.png" alt="R81 Logo" class="h-10 w-auto">
+
+            <!-- Company Name -->
+            <div class="bg-red-600 text-white font-bold text-xl px-3 py-2 rounded">
+                R81 <span class="text-white">TOWING</span>
+            </div>
+        </a>
+    </div>
+</div>
+
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="text-red-600 hover:bg-red-50 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Home</a>
+                        <a href="#services" class="text-gray-700 hover:bg-red-50 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Services</a>
+                        <a href="#about" class="text-gray-700 hover:bg-red-50 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">About</a>
+                        <a href="#coverage" class="text-gray-700 hover:bg-red-50 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Coverage</a>
+                        <a href="#contact" class="text-gray-700 hover:bg-red-50 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 rounded-md text-gray-700 hover:text-red-600 hover:bg-red-50 focus:outline-none">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden bg-white">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-red-600 hover:bg-red-50">Home</a>
+                <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-red-50 hover:text-red-600">Services</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-red-50 hover:text-red-600">About</a>
+                <a href="#coverage" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-red-50 hover:text-red-600">Coverage</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-red-50 hover:text-red-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gray-900 text-white overflow-hidden">
+        <div class="absolute inset-0">
+            <img class="w-full h-full object-cover opacity-40" src="images/hero.jpg" alt="Towing truck">
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 py-24 sm:px-6 lg:px-8">
+            <div class="text-center" data-aos="fade-up">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 hero-text">
+                    <span class="text-red-500 floating">TOWING</span> & 
+                    <span class="text-white">VEHICLE RECOVERY</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto hero-text">
+                    Professional towing services in Giyani, Thohoyandou, Tzaneen, Makhado, and Polokwane
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="tel:+27672778598" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 flex items-center justify-center">
+                        <i class="fas fa-phone-alt mr-2"></i> Emergency Call
+                    </a>
+                    <a href="#contact" class="bg-white hover:bg-gray-100 text-gray-800 font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 flex items-center justify-center">
+                        <i class="fas fa-envelope mr-2"></i> Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">OUR SERVICES</h2>
+                <div class="w-20 h-1 bg-red-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Trust our professional team for prompt and reliable towing solutions. We handle all your roadside assistance needs with care and efficiency.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md service-card transition duration-500" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 bg-red-600 flex items-center justify-center">
+                        <i class="fas fa-truck text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">24/7 Emergency Towing</h3>
+                        <p class="text-gray-600">
+                            Available round the clock for all your emergency towing needs. Fast response times to get you back on the road.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md service-card transition duration-500" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 bg-red-600 flex items-center justify-center">
+                        <i class="fas fa-car-crash text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Accident Recovery</h3>
+                        <p class="text-gray-600">
+                            Professional accident recovery services with care and precision to minimize further damage to your vehicle.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md service-card transition duration-500" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-48 bg-red-600 flex items-center justify-center">
+                        <i class="fas fa-tools text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Roadside Assistance</h3>
+                        <p class="text-gray-600">
+                            Flat tire changes, jump starts, fuel delivery, and lockout services when you need them most.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md service-card transition duration-500" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 bg-red-600 flex items-center justify-center">
+                        <i class="fas fa-truck-pickup text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Heavy Duty Towing</h3>
+                        <p class="text-gray-600">
+                            Specialized equipment for towing trucks, buses, and other heavy vehicles safely and efficiently.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md service-card transition duration-500" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 bg-red-600 flex items-center justify-center">
+                        <i class="fas fa-warehouse text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Vehicle Storage</h3>
+                        <p class="text-gray-600">
+                            Secure short-term and long-term vehicle storage options with 24/7 surveillance.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md service-card transition duration-500" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-48 bg-red-600 flex items-center justify-center">
+                        <i class="fas fa-shield-alt text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Insurance Assistance</h3>
+                        <p class="text-gray-600">
+                            We work directly with insurance companies to make the claims process as smooth as possible.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0" data-aos="fade-right">
+                    <div class="relative overflow-hidden rounded-lg shadow-xl h-[400px] md:h-[500px]" id="aboutSlider">
+    <img src="images/slide1.jpg" alt="Slide 1" class="w-full h-full object-cover transition-opacity duration-1000 opacity-100 absolute inset-0">
+    <img src="images/slide2.jpg" alt="Slide 2" class="w-full h-full object-cover transition-opacity duration-1000 opacity-0 absolute inset-0">
+    <img src="images/slide3.jpg" alt="Slide 3" class="w-full h-full object-cover transition-opacity duration-1000 opacity-0 absolute inset-0">
+    <img src="images/slide4.jpg" alt="Slide 4" class="w-full h-full object-cover transition-opacity duration-1000 opacity-0 absolute inset-0">
+    <img src="images/slide5.jpg" alt="Slide 5" class="w-full h-full object-cover transition-opacity duration-1000 opacity-0 absolute inset-0">
+
+    <div class="absolute -bottom-6 -right-6 bg-red-600 text-white p-6 rounded-lg shadow-lg z-10" data-aos="zoom-in" data-aos-delay="300">
+        <h3 class="text-2xl font-bold mb-2">SATRA</h3>
+        <p class="text-sm">Certified Members</p>
+    </div>
+</div>
+
+
+                </div>
+                <div class="lg:w-1/2 lg:pl-12" data-aos="fade-left">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">ABOUT R81 TOWING</h2>
+                    <div class="w-20 h-1 bg-red-600 mb-6"></div>
+                    <p class="text-gray-600 mb-6">
+                        R81 Towing is a premier towing and vehicle recovery service provider operating in Limpopo Province. With years of experience in the industry, we've built a reputation for reliability, professionalism, and exceptional customer service.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        As proud members of the SATRA towing association, we adhere to the highest industry standards. Our team of certified professionals is trained to handle all types of vehicles and recovery situations with the utmost care and efficiency.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-red-100 text-red-600">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700 font-medium">24/7 Emergency Services</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-red-100 text-red-600">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700 font-medium">Fully Licensed & Insured</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-red-100 text-red-600">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700 font-medium">Modern Equipment Fleet</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-full bg-red-100 text-red-600">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-700 font-medium">Trained & Certified Staff</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Area Section -->
+    <section id="coverage" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">OUR COVERAGE AREA</h2>
+                <div class="w-20 h-1 bg-red-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We provide towing and recovery services throughout Limpopo Province with quick response times.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                <div class="bg-red-600 text-white p-6 rounded-lg shadow-md text-center transform hover:scale-105 transition duration-300" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-map-marker-alt text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Giyani</h3>
+                    <p class="text-red-100">24/7 Coverage</p>
+                </div>
+                <div class="bg-red-600 text-white p-6 rounded-lg shadow-md text-center transform hover:scale-105 transition duration-300" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-map-marker-alt text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Thohoyandou</h3>
+                    <p class="text-red-100">24/7 Coverage</p>
+                </div>
+                <div class="bg-red-600 text-white p-6 rounded-lg shadow-md text-center transform hover:scale-105 transition duration-300" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fas fa-map-marker-alt text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Tzaneen</h3>
+                    <p class="text-red-100">24/7 Coverage</p>
+                </div>
+                <div class="bg-red-600 text-white p-6 rounded-lg shadow-md text-center transform hover:scale-105 transition duration-300" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fas fa-map-marker-alt text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Makhado</h3>
+                    <p class="text-red-100">24/7 Coverage</p>
+                </div>
+                <div class="bg-red-600 text-white p-6 rounded-lg shadow-md text-center transform hover:scale-105 transition duration-300" data-aos="zoom-in" data-aos-delay="500">
+                    <i class="fas fa-map-marker-alt text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Polokwane</h3>
+                    <p class="text-red-100">24/7 Coverage</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-gray-50 rounded-lg shadow-md overflow-hidden" data-aos="fade-up">
+                <div class="p-8 md:p-12">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 mb-8 md:mb-0">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Need towing outside our main areas?</h3>
+                            <p class="text-gray-600 mb-6">
+                                We also provide services in surrounding areas. Contact us to check if we can assist with your specific location.
+                            </p>
+                            <div class="flex items-center">
+                                <i class="fas fa-phone-alt text-red-600 mr-3 text-xl"></i>
+                                <div>
+                                    <p class="text-gray-600">Call us anytime</p>
+                                    <a href="tel:+27672778598" class="text-xl font-bold text-gray-900 hover:text-red-600 transition duration-300">+27 67 2778 598</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:pl-8">
+                            <div class="bg-white p-6 rounded-lg shadow-sm">
+                                <h4 class="text-lg font-bold text-gray-900 mb-4">Response Times</h4>
+                                <div class="space-y-4">
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium text-gray-700">Urban Areas</span>
+                                            <span class="text-sm font-medium text-red-600">30-45 min</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-red-600 h-2 rounded-full" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium text-gray-700">Suburban Areas</span>
+                                            <span class="text-sm font-medium text-red-600">45-60 min</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-red-600 h-2 rounded-full" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium text-gray-700">Rural Areas</span>
+                                            <span class="text-sm font-medium text-red-600">60-90 min</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-red-600 h-2 rounded-full" style="width: 60%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+<section class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">WHY CHOOSE R81 TOWING</h2>
+            <div class="w-20 h-1 bg-red-600 mx-auto mb-6"></div>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Here's why clients across Limpopo trust us with their vehicles every day.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div class="bg-white p-8 rounded-lg shadow-md transform hover:scale-105 transition duration-500" data-aos="fade-up" data-aos-delay="100">
+                <div class="flex items-center mb-4">
+                    <div class="flex-shrink-0 bg-red-100 text-red-600 rounded-full h-10 w-10 flex items-center justify-center">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="ml-3">
+                        <p class="text-sm font-medium text-gray-900">24/7 Availability</p>
+                    </div>
+                </div>
+                <p class="text-gray-600 italic">
+                    We're ready any time, day or night. Emergency? We'll be there.
+                </p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="bg-white p-8 rounded-lg shadow-md transform hover:scale-105 transition duration-500" data-aos="fade-up" data-aos-delay="200">
+                <div class="flex items-center mb-4">
+                    <div class="flex-shrink-0 bg-red-100 text-red-600 rounded-full h-10 w-10 flex items-center justify-center">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="ml-3">
+                        <p class="text-sm font-medium text-gray-900">Fully Insured & Certified</p>
+                    </div>
+                </div>
+                <p class="text-gray-600 italic">
+                    Peace of mind knowing you're covered. SATRA certified, fully insured.
+                </p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="bg-white p-8 rounded-lg shadow-md transform hover:scale-105 transition duration-500" data-aos="fade-up" data-aos-delay="300">
+                <div class="flex items-center mb-4">
+                    <div class="flex-shrink-0 bg-red-100 text-red-600 rounded-full h-10 w-10 flex items-center justify-center">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="ml-3">
+                        <p class="text-sm font-medium text-gray-900">Modern Equipment</p>
+                    </div>
+                </div>
+                <p class="text-gray-600 italic">
+                    We use top-of-the-line gear for safe, fast, and damage-free towing.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-red-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="zoom-in">
+            <h2 class="text-3xl font-bold mb-6">Need Emergency Towing Services?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                Our team is available 24/7 to assist you with all your towing and recovery needs.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="tel:+27672778598" class="bg-white hover:bg-gray-100 text-red-600 font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 flex items-center justify-center">
+                    <i class="fas fa-phone-alt mr-2"></i> Call Now
+                </a>
+                <a href="#contact" class="bg-transparent hover:bg-red-700 border-2 border-white text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 flex items-center justify-center">
+                    <i class="fas fa-envelope mr-2"></i> Send Message
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">CONTACT US</h2>
+                <div class="w-20 h-1 bg-red-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Get in touch with our team for any inquiries or to request our services.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div data-aos="fade-right">
+                    <div class="bg-gray-50 rounded-lg shadow-md p-8 h-full">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-red-100 text-red-600">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium text-gray-900">Our Location</h4>
+                                    <p class="mt-1 text-gray-600">73B kwagga street, Kremetart</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-red-100 text-red-600">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium text-gray-900">Phone Number</h4>
+                                    <p class="mt-1 text-gray-600">
+                                        <a href="tel:+27672778598" class="hover:text-red-600 transition duration-300">+27 67 2778 598</a> (24/7 Emergency)
+                                    </p>
+                                
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-red-100 text-red-600">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium text-gray-900">Email Address</h4>
+                                    <p class="mt-1 text-gray-600">
+                                        <a href="mailto:info@r81towing.co.za" class="hover:text-red-600 transition duration-300">info@r81towing.co.za</a>
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-red-100 text-red-600">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium text-gray-900">Operating Hours</h4>
+                                    <p class="mt-1 text-gray-600">Emergency Services: 24/7</p>
+                                    <p class="mt-1 text-gray-600">Office Hours: Mon-Fri 8:00 - 17:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="text-lg font-medium text-gray-900 mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="h-10 w-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-700 hover:bg-red-600 hover:text-white transition duration-300">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="h-10 w-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-700 hover:bg-red-600 hover:text-white transition duration-300">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.instagram.com/r81towing_roadside_assist/" class="h-10 w-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-700 hover:bg-red-600 hover:text-white transition duration-300">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.tiktok.com/@r81towing_" class="h-10 w-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-700 hover:bg-red-600 hover:text-white transition duration-300">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div data-aos="fade-left">
+                    <div class="bg-gray-50 rounded-lg shadow-md p-8 h-full">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h3>
+                        <form id="whatsappForm">
+                            <div class="grid grid-cols-1 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                                    <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 p-3 border">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                                    <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 p-3 border">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 p-3 border">
+                                </div>
+                                <div>
+                                    <label for="service" class="block text-sm font-medium text-gray-700">Service Needed</label>
+                                    <select id="service" name="service" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 p-3 border">
+                                        <option>Emergency Towing</option>
+                                        <option>Accident Recovery</option>
+                                        <option>Roadside Assistance</option>
+                                        <option>Heavy Duty Towing</option>
+                                        <option>Vehicle Storage</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 p-3 border"></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 rounded-md transition duration-300 transform hover:scale-105">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+    <div class="flex items-center space-x-3 mb-4">
+        <!-- Logo -->
+        <img src="images/logo.png" alt="R81 Logo" class="h-10 w-auto">
+
+        <!-- Company Name -->
+        <div class="bg-red-600 text-white font-bold text-xl px-3 py-2 rounded inline-block">
+            R81 <span class="text-white">TOWING</span>
+        </div>
+    </div>
+
+    <p class="text-gray-400 mb-4">
+        Professional towing and recovery services in Limpopo Province.
+    </p>
+
+    <div class="flex space-x-4">
+        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.tiktok.com/@r81towing_" class="text-gray-400 hover:text-white transition duration-300">
+            <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.instagram.com/r81towing_roadside_assist/" class="text-gray-400 hover:text-white transition duration-300">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+</div>
+
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#coverage" class="text-gray-400 hover:text-white transition duration-300">Coverage Area</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Emergency Towing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Accident Recovery</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Roadside Assistance</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Heavy Duty Towing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Vehicle Storage</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-red-600"></i>
+                            <span>73B kwagga street , Kremetart</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3 text-red-600"></i>
+                            <span>+27 67 277 8598</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3 text-red-600"></i>
+                            <span>info@r81towing.co.za</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2023 R81 Towing. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+<div class="fixed bottom-6 right-6 z-50">
+    <a href="https://wa.me/27672778598"
+       class="bg-red-600 hover:bg-red-700 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition duration-300"
+       data-aos="zoom-in" data-aos-delay="500">
+        <i class="fab fa-whatsapp text-white text-2xl"></i>
+    </a>
+</div>
+
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        document.getElementById('whatsappForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const service = document.getElementById('service').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    // Manually add %0A for line breaks (don't use \n here)
+    const text =
+        '*New Service Request*%0A' +
+        '*Name:* ' + name + '%0A' +
+        '*Email:* ' + email + '%0A' +
+        '*Phone:* ' + phone + '%0A' +
+        '*Service Needed:* ' + service + '%0A' +
+        '*Message:* ' + message;
+
+    const whatsappNumber = '27672778598'; // Your correct WhatsApp number
+
+    const url = `https://wa.me/${whatsappNumber}?text=${text}`;
+
+    window.open(url, '_blank');
+});
+
+const slides = document.querySelectorAll('#aboutSlider img');
+    let current = 0;
+
+    setInterval(() => {
+        slides[current].classList.remove('opacity-100');
+        slides[current].classList.add('opacity-0');
+
+        current = (current + 1) % slides.length;
+
+        slides[current].classList.remove('opacity-0');
+        slides[current].classList.add('opacity-100');
+    }, 5000); // 5 seconds per slide
+    </script>
+</body>
+</html>
