@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="R81 Towing provides 24/7 professional towing, recovery, and roadside assistance across Limpopo Province.">
-<meta name="keywords" content="towing, vehicle recovery, Limpopo, roadside assistance, emergency towing, SATRA, R81 Towing">
-<meta name="author" content="R81 Towing">
+    <meta name="keywords" content="towing, vehicle recovery, Limpopo, roadside assistance, emergency towing, SATRA, R81 Towing">
+    <meta name="author" content="R81 Towing">
 
-<!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
-<meta property="og:title" content="R81 Towing - Professional Towing Services in Limpopo">
-<meta property="og:description" content="Fast, certified towing and recovery services in Limpopo. Available 24/7.">
-<meta property="og:image" content="images/logo.png">
-<meta property="og:url" content="https://www.r81towing.co.za/"> <!-- Replace with your real domain -->
-<meta property="og:type" content="website">
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:title" content="R81 Towing - Professional Towing Services in Limpopo">
+    <meta property="og:description" content="Fast, certified towing and recovery services in Limpopo. Available 24/7.">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:url" content="https://www.r81towing.co.za/"> <!-- Replace with your real domain -->
+    <meta property="og:type" content="website">
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="R81 Towing - 24/7 Roadside Help in Limpopo">
-<meta name="twitter:description" content="Trusted towing & recovery experts. Serving Giyani, Thohoyandou, Tzaneen, Makhado & Polokwane.">
-<meta name="twitter:image" content="images/logo.png">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="R81 Towing - 24/7 Roadside Help in Limpopo">
+    <meta name="twitter:description" content="Trusted towing & recovery experts. Serving Giyani, Thohoyandou, Tzaneen, Makhado & Polokwane.">
+    <meta name="twitter:image" content="images/logo.png">
 
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="images/logo.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
 
     <title>R81 Towing - Professional Towing Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -33,35 +33,96 @@
             font-family: 'Poppins', sans-serif;
             overflow-x: hidden;
         }
+        
         .hero-text {
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
+        
         .service-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
+        
         .floating {
             animation: floating 3s ease-in-out infinite;
         }
+        
         @keyframes floating {
             0% { transform: translateY(0px); }
             50% { transform: translateY(-15px); }
             100% { transform: translateY(0px); }
         }
+        
         .text-glow {
             animation: glow 2s ease-in-out infinite alternate;
         }
+        
         @keyframes glow {
             from { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60000, 0 0 20px #e60000; }
             to { text-shadow: 0 0 10px #fff, 0 0 15px #ff4d4d, 0 0 20px #ff4d4d, 0 0 25px #ff4d4d; }
         }
+        
         .pulse {
             animation: pulse 2s infinite;
         }
+        
         @keyframes pulse {
             0% { transform: scale(1); }
             50% { transform: scale(1.05); }
             100% { transform: scale(1); }
+        }
+
+        /* Responsive fixes */
+        .max-width {
+            max-width: 100%;
+        }
+
+        .button-width {
+            width: auto;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        @media (min-width: 640px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .grid-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Prevent horizontal scroll on mobile */
+        html, body {
+            overflow-x: hidden;
+        }
+
+        /* Form responsiveness */
+        .form-control {
+            width: 100%;
+        }
+
+        /* Heading responsiveness */
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 3.5rem;
+            }
+        }
+
+        /* Responsive images */
+        img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -115,30 +176,32 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="relative bg-gray-900 text-white overflow-hidden">
-        <div class="absolute inset-0">
-            <img class="w-full h-full object-cover opacity-40" src="images/hero.jpg" alt="Towing truck">
-        </div>
-        <div class="relative max-w-7xl mx-auto px-4 py-24 sm:px-6 lg:px-8">
-            <div class="text-center" data-aos="fade-up">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6 hero-text">
-                    <span class="text-red-500 floating">TOWING</span> & 
-                    <span class="text-white">VEHICLE RECOVERY</span>
-                </h1>
-                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto hero-text">
-                    Professional towing services in Giyani, Thohoyandou, Tzaneen, Makhado, and Polokwane
-                </p>
-                <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="tel:+27672778598" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 flex items-center justify-center">
-                        <i class="fas fa-phone-alt mr-2"></i> Emergency Call
-                    </a>
-                    <a href="#contact" class="bg-white hover:bg-gray-100 text-gray-800 font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 flex items-center justify-center">
-                        <i class="fas fa-envelope mr-2"></i> Contact Us
-                    </a>
-                </div>
+<section id="home" class="relative bg-gray-900 text-white overflow-hidden flex justify-center">
+    <div class="relative w-full h-[600px]">
+        <!-- Background Image -->
+        <img class="absolute inset-0 w-full h-full object-cover opacity-40" src="images/hero.jpg" alt="Towing truck">
+
+        <!-- Content -->
+        <div class="relative z-10 px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center items-center text-center" data-aos="fade-up">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 hero-text">
+                <span class="text-red-500 floating">TOWING</span> & 
+                <span class="text-white">VEHICLE RECOVERY</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl hero-text">
+                Professional towing services in Giyani, Thohoyandou, Tzaneen, Makhado, and Polokwane
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="tel:+27672778598" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 flex items-center justify-center">
+                    <i class="fas fa-phone-alt mr-2"></i> Emergency Call
+                </a>
+                <a href="#contact" class="bg-white hover:bg-gray-100 text-gray-800 font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 flex items-center justify-center">
+                    <i class="fas fa-envelope mr-2"></i> Contact Us
+                </a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Services Section -->
     <section id="services" class="py-20 bg-white">
@@ -238,7 +301,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="lg:flex items-center">
                 <div class="lg:w-1/2 mb-12 lg:mb-0" data-aos="fade-right">
-                    <div class="relative overflow-hidden rounded-lg shadow-xl h-[400px] md:h-[500px]" id="aboutSlider">
+                    <div class="relative overflow-hidden rounded-lg shadow-xl h-[250px] sm:h-[300px] md:h-[400px] lg:h-[500px]" id="aboutSlider">
+
     <img src="images/slide1.jpg" alt="Slide 1" class="w-full h-full object-cover transition-opacity duration-1000 opacity-100 absolute inset-0">
     <img src="images/slide2.jpg" alt="Slide 2" class="w-full h-full object-cover transition-opacity duration-1000 opacity-0 absolute inset-0">
     <img src="images/slide3.jpg" alt="Slide 3" class="w-full h-full object-cover transition-opacity duration-1000 opacity-0 absolute inset-0">
